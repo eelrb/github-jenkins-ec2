@@ -21,10 +21,10 @@ data "aws_ami" "my_image" {
 resource "aws_instance" "blee-vault" {
   count = "${var.instance_count}"
   ami           = "${data.aws_ami.my_image.id}"
-  instance_type = "t2.medium"
+  instance_type = "t2.micro"
   #vpc_security_group_ids = ["${aws_security_group.main_sec_group.id}"]
   #subnet_id = "${aws_subnet.subnet1.id}"
-  key_name = "rchao"
+  key_name = "${var.key_name}"
   #tags {
     #Name = "${var.instance_name_vault}"
 
