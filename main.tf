@@ -25,9 +25,9 @@ resource "aws_instance" "blee-vault" {
   #vpc_security_group_ids = ["${aws_security_group.main_sec_group.id}"]
   #subnet_id = "${aws_subnet.subnet1.id}"
   key_name = "rchao"
-  tags {
+  #tags {
     #Name = "${var.instance_name_vault}"
 
-  }
+  #}
 }
 
