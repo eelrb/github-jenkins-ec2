@@ -18,7 +18,7 @@ data "aws_ami" "my_image" {
 
 }
 
-resource "aws_instance" "ec-2" {
+resource "aws_instance" "blee-ec2" {
   count = "${var.instance_count}"
   ami           = "${data.aws_ami.my_image.id}"
   instance_type = "t2.medium"
