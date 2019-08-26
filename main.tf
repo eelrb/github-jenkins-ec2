@@ -1,4 +1,4 @@
-provider {aws}
+provider aws{}
 
 data "aws_ami" "my_image" {
   
