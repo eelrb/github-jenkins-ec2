@@ -1,4 +1,6 @@
-provider aws{}
+provider aws{
+  region = "${var.aws_region}"
+  }
 
 data "aws_ami" "my_image" {
   
