@@ -1,6 +1,14 @@
-workspaces { name = "jenkings-test" }
-hostname     = "app.terraform.io"
-organization = "bleehashiorg"
+data "terraform_remote_state" "foo" {
+  backend = "remote"
+
+  config = {
+    organization = "bleehashiorg"
+
+    workspaces = {
+      name = "jenkins-test"
+    }
+  }
+}
 
 #terraform {
 #  backend "remote" {
