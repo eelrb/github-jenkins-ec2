@@ -1,24 +1,13 @@
-data "terraform_remote_state" "foo" {
-  backend = "remote"
 
-  config = {
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
     organization = "bleehashiorg"
-
-    workspaces = {
+    workspaces {
       name = "jenkins-test"
     }
   }
-}
-
-#terraform {
-#  backend "remote" {
-#    hostname = "app.terraform.io"
-#    organization = "bleehashiorg"
-#    workspaces {
-#      name = "jenkins-test"
-#    }
-#  }
-#}
+ }
 
 
 provider aws{
