@@ -6,6 +6,8 @@ variable "key_name" {
 default = "key"
 }
 
-variable "aws_region" {
-default = "us-west-2"
-  }
+variable "aws_region" {}
+
+variable "AWS_ACCESS_KEY_ID" {}
+
+variable "AWS_SECRET_ACCESS_KEY" {}
