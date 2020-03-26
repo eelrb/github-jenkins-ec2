@@ -3,7 +3,7 @@ terraform {
     hostname = "app.terraform.io"
     organization = "bleehashiorg"
     workspaces {
-      name = "github-jenkins-ec2"
+      name = "jenkins-test"
     }
   }
 }
