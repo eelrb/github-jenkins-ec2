@@ -1,12 +1,16 @@
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "bleehashiorg"
-    workspaces {
-      name = "jenkins-test"
-    }
-  }
-}
+workspaces { name = "jenkings-test" }
+hostname     = "app.terraform.io"
+organization = "bleehashiorg"
+
+#terraform {
+#  backend "remote" {
+#    hostname = "app.terraform.io"
+#    organization = "bleehashiorg"
+#    workspaces {
+#      name = "jenkins-test"
+#    }
+#  }
+#}
 
 
 provider aws{
