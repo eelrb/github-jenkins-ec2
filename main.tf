@@ -1,3 +1,14 @@
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "bleehashiorg"
+    workspaces {
+      name = "github-jenkins-ec2"
+    }
+  }
+}
+
+
 provider aws{
   region = "${var.aws_region}"
   }
