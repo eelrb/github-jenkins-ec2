@@ -7,7 +7,7 @@ terraform {
     organization = "ptfe"
     workspaces {
       #name = "jenkins-test"
-      name= "github-jenkins-ec2"
+      name = "github-jenkins-ec2"
     }
   }
  }
