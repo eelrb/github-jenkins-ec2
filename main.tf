@@ -7,8 +7,7 @@ terraform {
     #organization = "ptfe"
     token = "TFE_API_TOKEN"
     workspaces {
-      name = "jenkins-test"
-      #name = "github-jenkins-ec2-2"
+      name = "github-jenkins-ec2-2"
     }
   }
  }
