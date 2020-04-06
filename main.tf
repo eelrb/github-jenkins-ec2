@@ -1,14 +1,14 @@
 
 terraform {
   backend "remote" {
-    #hostname = "app.terraform.io"
-    #organization = "bleehashiorg"
-    hostname = "blee-ptfe.hashidemos.io"
-    organization = "ptfe"
+    hostname = "app.terraform.io"
+    organization = "bleehashiorg"
+    #hostname = "blee-ptfe.hashidemos.io"
+    #organization = "ptfe"
     token = "TFE_API_TOKEN"
     workspaces {
-      #name = "jenkins-test"
-      name = "github-jenkins-ec2-2"
+      name = "jenkins-test"
+      #name = "github-jenkins-ec2-2"
     }
   }
  }
